@@ -7,28 +7,6 @@
 
 using namespace std;
 
-struct pairComparator {
-    bool operator()(const pair<int, int> &a, const pair<int, int> &b) const {
-        if (a.first == b.first) {
-            return a.second > b.second;
-        } else {
-            return a.first > b.first;
-        }
-    }
-};
-
-struct tupleComparator {
-    bool operator()(const tuple<int, int, int> &a, const tuple<int, int, int> &b) const {
-        if (std::get<0>(a) == std::get<0>(b)) {
-            if (std::get<1>(a) == std::get<1>(b)) {
-                return std::get<2>(a) > std::get<2>(b);
-            }
-            return std::get<1>(a) > std::get<1>(b);
-        }
-
-        return std::get<0>(a) > std::get<0>(b);
-    }
-};
 
 class Solution {
 public:
