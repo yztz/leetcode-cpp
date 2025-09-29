@@ -8,9 +8,11 @@ project(LeetCodeSolutions)
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+SET(CMAKE_BUILD_TYPE "Debug")
 
 # 查找 solutions 目录下的所有 .cpp 文件
 file(GLOB_RECURSE solution_files "solutions/*.cpp")
+
 
 # 遍历每个 .cpp 文件，并创建独立的可执行目标
 foreach(solution_file ${solution_files})

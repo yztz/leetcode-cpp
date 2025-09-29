@@ -13,6 +13,8 @@
 #include <string>
 #include <cstdio>
 #include <iostream>
+#include <cstdint>
+#include <climits>
 
 
 
