@@ -16,6 +16,7 @@
 #include <cstdint>
 #include <climits>
 #include <cmath>
+#include <cstring>
 
 
 
