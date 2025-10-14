@@ -17,6 +17,10 @@ s%:
 	@./build/s$*
 	@echo "---------  End  ---------"
 
+f%:
+	@echo "Generating template for solution s$*..."
+	@cp solutions/template.cpp solutions/s$*.cpp
+
 # 清理构建目录
 clean:
 	@echo "Cleaning build directory..."

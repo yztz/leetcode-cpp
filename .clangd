@@ -1,0 +1,22 @@
+CompileFlags:
+  Add: 
+    - -std=c++17
+    - -Isrc
+  Remove: 
+    - -flarge-source-files
+  Source:
+    Exclude:
+      - "**/_*.cpp"
+      - "**/_*.h"
+Completion:
+  HeaderInsertion: Never
+
+Diagnostics:
+  ClangTidy:
+    Add:
+    Remove:
+      - bugprone-easily-swappable-parameters
+      - bugprone-implicit-widening-of-multiplication-result
+      - readability-identifier-length
+      - modernize-use-auto
+
