@@ -35,7 +35,7 @@ public:
             int i = 0;
             int j = nums.size() - 1;
             while (i < j) {
-                int mid = i + (j - i) / 2;
+                int mid = i + (j - i + 1) / 2;
                 if (nums[mid] - k <= num) {
                     i = mid;
                 } else {
