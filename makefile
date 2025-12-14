@@ -19,7 +19,12 @@ s%:
 
 f%:
 	@echo "Generating template for solution s$*..."
-	@cp solutions/template.cpp solutions/s$*.cpp
+	@if test -f solutions/s$*.cpp; then \
+		echo "Error: solutions/s$*.cpp already exists. Aborting." 1>&2; \
+		false; \
+	else \
+		cp solutions/template.cpp solutions/s$*.cpp; \
+	fi
 
 # 清理构建目录
 clean:
