@@ -1,0 +1,4 @@
+{
+    "clangd.enableCodeCompletion": true,
+    "clangd.enableHover": true
+}
