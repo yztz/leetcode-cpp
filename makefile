@@ -26,6 +26,13 @@ f%:
 		cp solutions/template.cpp solutions/s$*.cpp; \
 	fi
 
+
+commit:
+	@git add .
+	@read -p "请输入 Commit 消息: " msg; \
+	git commit -m "$$msg"
+	@echo "--- 已成功提交到本地仓库 ---"
+
 # 清理构建目录
 clean:
 	@echo "Cleaning build directory..."
