@@ -22,6 +22,7 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
+#include <bit>
 
 struct ListNode {
     int val;
