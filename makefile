@@ -24,7 +24,7 @@ f%:
 		false; \
 	else \
 		cp solutions/template.cpp solutions/s$*.cpp; \
-		code solutions/s$*.cpp \
+		code solutions/s$*.cpp; \
 	fi
 
 
