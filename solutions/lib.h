@@ -13,6 +13,7 @@
 #include <iostream>
 #include <list>
 #include <map>
+#include <stack>
 #include <set>
 #include <numeric>
 #include <queue>
