@@ -24,6 +24,7 @@
 #include <utility>
 #include <vector>
 #include <bit>
+#include <memory>
 
 struct ListNode {
     int val;
